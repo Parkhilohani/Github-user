@@ -28,7 +28,17 @@ Folder Structure
 ├── script.js
 └── GitHub__headpic.jpg
 
+link:https://github-user-silk.vercel.app/
+
 API Reference
 GitHub User API:
 https://api.github.com/users/{username}
+
+<img width="1903" height="983" alt="ss-git" src="https://github.com/user-attachments/assets/bab2b3c1-d1de-4210-a8a9-e527e6c0a315" />
+
+<img width="1913" height="970" alt="ss-git1" src="https://github.com/user-attachments/assets/a9b70ef4-83a8-41c7-81cc-e41666efea53" />
+
+
+
+
 
