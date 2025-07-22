@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    position: relative;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/GitHub__headpic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Container card */
+.container {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Search bar styling */
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Search button with icon only */
+.searchbtn {
+    width: 68px;
+    height: 68px;
+    background-color: #fff;
+    background-image: url('images/search_btn-removebg-preview.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.searchbtn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.searchbtn:active {
+    transform: scale(0.95);
+}
+
+/* Profile display */
+#profile {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 15px 0;
+    border: 3px solid #040505;
+    object-fit: cover;
+}
+
+#profile h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+#profile p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#profile a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background:#555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#profile a:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px 15px;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 8px;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search input,
+    .searchbtn {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    /* Center icon-only button */
+    .searchbtn {
+        height: 44px;
+        background-size: 65%;
+    }
+
+    #profile img {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+    }
+
+    #profile h2 {
+        font-size: 20px;
+    }
+
+    #profile p {
+        font-size: 13px;
+    }
+
+    #profile a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+/* Ultra-small devices: 3-inch phones (~240-320px width) */
+@media (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px 10px;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 6px;
+    }
+
+    .search {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .search input {
+        font-size: 14px;
+        font: 1 1 70%;
+    }
+
+    .searchbtn {
+        flex: 0 0 30%;
+        height: 40px;
+        background-size: 55%;
+        border-radius: 3px;
+    }
+
+    #profile img {
+        width: 80px;
+        height: 80px;
+        margin: 10px 0;
+    }
+
+    #profile h2 {
+        font-size: 18px;
+    }
+
+    #profile p {
+        font-size: 12px;
+    }
+
+    #profile a {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
